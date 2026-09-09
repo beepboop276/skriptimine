@@ -1,0 +1,4 @@
+Tavalise töövoo sammud:
+1. git add <failinimi>
+2. git commit -m "muudatuse kirjeldus"
+3. git push -u skriptimine master EOF
