@@ -1,0 +1,18 @@
+#!/bin/bash
+# Skript väljastab kujundi, kus reas on vastavalt teatud arv 'o' ja '*' sümboleid
+
+echo -n "Sisesta ridade arv: "
+read rida
+
+for (( i=1; i<=rida; i++ )); do
+    echo -n "$i. "
+    # Väljastame 'o' sümbolid (kokku rida - i tükki)
+    for (( j=1; j<=(rida-i); j++ )); do
+        echo -n "o "
+    done
+    # Väljastame '*' sümbolid (kokku i tükki)
+    for (( k=1; k<=i; k++ )); do
+        echo -n "* "
+    done
+    echo ""
+done
